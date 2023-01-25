@@ -1,0 +1,11 @@
+---
+# tasks file for CSF
+# Replace both iterations of the IP with the one you want to block 
+- name: Block IP on all servers
+  shell:
+    cmd: csf -d 198.204.250.82
+- name: Confirm IP block
+  shell:
+    cmd: csf -g 198.204.250.82    
+  register: command_output  
+- debug: var=command_output.stdout_lines    
