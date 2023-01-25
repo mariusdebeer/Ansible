@@ -1,0 +1,52 @@
+all:
+  hosts:
+    dockermanager1:
+      ansible_host: 192.168.1.201
+      ansible_port: 22 
+      ansible_user: root
+      ansible_ssh_private_key_file: /var/root/.shh/id_rsa
+    dockermanager2:
+      ansible_host: 192.168.1.202
+      ansible_port: 22 
+      ansible_user: root
+      ansible_ssh_private_key_file: /var/root/.shh/id_rsa
+    dockermanager3:
+      ansible_host: 192.168.1.203
+      ansible_port: 22 
+      ansible_user: root
+      ansible_ssh_private_key_file: /var/root/.shh/id_rsa               
+    dockernode1:
+      ansible_host: 192.168.1.210
+      ansible_port: 22 
+      ansible_user: root
+      ansible_ssh_private_key_file: /var/root/.shh/id_rsa  
+    dockernode2:
+      ansible_host: 192.168.1.211
+      ansible_port: 22 
+      ansible_user: root
+      ansible_ssh_private_key_file: /var/root/.shh/id_rsa
+    dockernode3:
+      ansible_host: 192.168.1.212
+      ansible_port: 22 
+      ansible_user: root
+      ansible_ssh_private_key_file: /var/root/.shh/id_rsa  
+    dockernode4:
+      ansible_host: 192.168.1.213
+      ansible_port: 22 
+      ansible_user: root
+      ansible_ssh_private_key_file: /var/root/.shh/id_rsa          
+    dockernode5:
+      ansible_host: 192.168.1.214
+      ansible_port: 22 
+      ansible_user: root
+      ansible_ssh_private_key_file: /var/root/.shh/id_rsa  
+    dockernode6:
+      ansible_host: 192.168.1.215
+      ansible_port: 22 
+      ansible_user: root
+      ansible_ssh_private_key_file: /var/root/.shh/id_rsa  
+    dockernode7:
+      ansible_host: 192.168.1.216
+      ansible_port: 22 
+      ansible_user: root
+      ansible_ssh_private_key_file: /var/root/.shh/id_rsa              
