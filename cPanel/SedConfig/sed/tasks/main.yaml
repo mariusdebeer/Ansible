@@ -1,0 +1,7 @@
+# Change $config[\'htmleditor\'] = 0 to $config[\'htmleditor\'] = 1 in /usr/local/cpanel/base/3rdparty/roundcube/config/config.inc.php 
+- name: replacing a line in file
+  lineinfile: 
+    path: /usr/local/cpanel/base/3rdparty/roundcube/config/config.inc.php 
+    regexp: ^\$config\['htmleditor'] = 0;$ 
+    line: '$config[''htmleditor''] = 1;'
+    backrefs: yes
