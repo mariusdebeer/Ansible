@@ -1,0 +1,10 @@
+# tasks file for exim
+ 
+- name: Frozen mail delete
+  shell:
+    cmd: exiqgrep -i -z | xargs exim -Mrm 
+- name: Mail Count
+  shell:
+    cmd: exim -bpc 
+  register: command_output  
+- debug: var=command_output.stdout_lines  
